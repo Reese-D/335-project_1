@@ -1,0 +1,600 @@
+Script started on Thu Feb 18 14:26:31 2016
+[?1034hbash-3.2$ ./test.outg++ -I/usr/local/include  -L /usr/X11/lib -L /usr/local/lib  -L /usr/local/Cellar/glew/1.12.0/lib -framework CoreFoundation -lX11.6 -lX11-xcb.1 -lXCursor.1 -framework CCoreVideo -framework CoreGraphics -framework IOKit -framework AppKit -lGLEW -lglfw3 -lGL.1 tutorial.cpp -Wall[A[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[Ccd open*ls[Kcd ~/projects[C[C[C[C[C[C[C[C[C[Cls[K[K[Kgcc Proj[K[K[K[K[K[K[K[Kls
+Project_General.c	project.c		temp2			test2
+a.out			temp			test			typescript
+bash-3.2$ gcc pro[K[K[KProject_General.c -Wall
+bash-3.2$ .//[Ka.out 
+
+Please specify the following delimited by spaces:
+	document/input file name name
+	which column is the classifier
+	number of unique values supplied for largest column
+	an optional row size  or  a -1 if not supplied
+	which column(s) will be ignored
+bash-3.2$ ./a.out temp 5 1 -1 3
+Please indicate what number is being compared or the substring(s) being compared; delimited by spaces
+For column 0:unused
+For column 1:female
+For column 2:+
+For column 3:170
+For column 4:y
+
+FileLength: 1000
+
+Priors:
+	classifier = y: 0.343000
+	NOT classifier = y: 0.657000
+
+likelihoods for column values, if numeric data likelihood given > #:
+		--unused--
+	likelihood for unused given y: 0.000000
+	likelihood for NOT unused given y: 1.000000
+	likelihood for unused given NOT y: 0.000000
+	likelihood for NOT unused given NOT y: 1.000000
+
+		--female--
+	likelihood for female given y: 0.676385
+	likelihood for NOT female given y: 0.323615
+	likelihood for female given NOT y: 0.362253
+	likelihood for NOT female given NOT y: 0.637747
+
+		--+--
+	likelihood for + given y: 0.935860
+	likelihood for NOT + given y: 0.064140
+	likelihood for + given NOT y: 0.869102
+	likelihood for NOT + given NOT y: 0.130898
+
+		--170--
+	likelihood for 170 given y: 0.644315
+	likelihood for NOT 170 given y: 0.355685
+	likelihood for 170 given NOT y: 0.547945
+	likelihood for NOT 170 given NOT y: 0.452055
+
+
+please input test set data via filename:	test
+Y Y
+N Y
+N N
+Y N
+N N
+Y Y
+N N
+N N
+Y Y
+Y Y
+Y Y
+Y Y
+Y Y
+Y Y
+N N
+N N
+Y Y
+Y Y
+N N
+N N
+Y Y
+Y Y
+N N
+Y Y
+Y Y
+Y Y
+Y Y
+Y Y
+N N
+Y Y
+Y N
+N N
+N N
+N N
+Y Y
+Y Y
+Y Y
+Y Y
+Y Y
+Y Y
+N N
+Y Y
+N N
+N N
+N Y
+N N
+Y Y
+N N
+N N
+N N
+N N
+N N
+Y Y
+N N
+N Y
+N N
+Y Y
+N N
+Y Y
+N N
+N Y
+Y Y
+N N
+N N
+Y Y
+N N
+N N
+Y Y
+Y Y
+Y Y
+N N
+N N
+Y Y
+Y Y
+N N
+N N
+N N
+Y Y
+N N
+N N
+N N
+Y Y
+Y Y
+Y Y
+Y Y
+Y Y
+N N
+N N
+N N
+N N
+N N
+N N
+N N
+Y Y
+Y Y
+N N
+N N
+Y Y
+N N
+N N
+Y Y
+Y Y
+Y Y
+Y Y
+Y Y
+N N
+N N
+Y Y
+N N
+N N
+N N
+N N
+N N
+Y Y
+Y Y
+N N
+Y Y
+N N
+Y Y
+N N
+N N
+N N
+Y Y
+N N
+Y Y
+Y Y
+Y N
+Y Y
+Y Y
+Y Y
+N N
+N N
+N N
+N Y
+N Y
+N N
+Y Y
+Y Y
+Y Y
+Y Y
+Y Y
+N N
+Y Y
+N N
+N N
+N N
+Y Y
+N N
+Y Y
+N N
+N N
+Y Y
+Y Y
+N Y
+N N
+N N
+N N
+N N
+Y Y
+N N
+Y Y
+N N
+Y Y
+N N
+Y Y
+Y Y
+Y Y
+Y Y
+N N
+N N
+N N
+Y Y
+N N
+N N
+N N
+Y Y
+N N
+Y Y
+N N
+Y Y
+N Y
+N N
+N Y
+Y Y
+N N
+N N
+N N
+Y Y
+Y Y
+N N
+N N
+N N
+N N
+N N
+N N
+Y Y
+N N
+N N
+N N
+Y Y
+Y Y
+Y Y
+Y Y
+Y Y
+Y Y
+N N
+N N
+N N
+Y Y
+N N
+Y Y
+Y Y
+Y Y
+N N
+Y Y
+Y Y
+N N
+Y Y
+N N
+N N
+N N
+Y Y
+Y Y
+N N
+N N
+Y Y
+N N
+Y Y
+Y Y
+N N
+N N
+N N
+Y Y
+Y Y
+Y Y
+Y Y
+N N
+N N
+Y Y
+N N
+Y Y
+N N
+N N
+Y N
+Y Y
+Y Y
+N N
+N N
+N N
+N N
+Y Y
+Y Y
+Y Y
+Y Y
+N N
+N N
+N N
+N N
+N N
+N N
+
+
+
+			With weight likelihoods replaced with the function given
+			Y N
+			N N
+			N Y
+			Y Y
+			N Y
+			Y N
+			N N
+			N Y
+			Y N
+			Y Y
+			Y Y
+			Y Y
+			Y N
+			Y N
+			N Y
+			N Y
+			Y N
+			Y Y
+			N Y
+			N Y
+			Y Y
+			Y Y
+			N Y
+			Y N
+			Y Y
+			Y Y
+			Y Y
+			Y N
+			N Y
+			Y N
+			Y Y
+			N Y
+			N Y
+			N Y
+			Y Y
+			Y Y
+			Y N
+			Y N
+			Y Y
+			Y Y
+			N Y
+			Y N
+			N Y
+			N Y
+			N N
+			N N
+			Y Y
+			N Y
+			N Y
+			N N
+			N Y
+			N Y
+			Y Y
+			N Y
+			N Y
+			N Y
+			Y N
+			N Y
+			Y Y
+			N N
+			N Y
+			Y N
+			N Y
+			N Y
+			Y N
+			N N
+			N Y
+			Y Y
+			Y Y
+			Y Y
+			N Y
+			N N
+			Y Y
+			Y Y
+			N Y
+			N N
+			N N
+			Y N
+			N N
+			N Y
+			N Y
+			Y N
+			Y Y
+			Y N
+			Y N
+			Y Y
+			N Y
+			N N
+			N N
+			N Y
+			N N
+			N Y
+			N Y
+			Y Y
+			Y Y
+			N Y
+			N Y
+			Y Y
+			N N
+			N Y
+			Y N
+			Y Y
+			Y N
+			Y Y
+			Y N
+			N N
+			N Y
+			Y N
+			N N
+			N N
+			N Y
+			N N
+			N Y
+			Y N
+			Y N
+			N N
+			Y N
+			N Y
+			Y Y
+			N N
+			N N
+			N N
+			Y N
+			N N
+			Y N
+			Y N
+			Y N
+			Y N
+			Y N
+			Y N
+			N Y
+			N Y
+			N Y
+			N Y
+			N Y
+			N Y
+			Y Y
+			Y Y
+			Y N
+			Y Y
+			Y Y
+			N Y
+			Y N
+			N N
+			N N
+			N Y
+			Y Y
+			N N
+			Y N
+			N Y
+			N Y
+			Y N
+			Y Y
+			N Y
+			N Y
+			N N
+			N N
+			N Y
+			Y N
+			N N
+			Y N
+			N N
+			Y N
+			N N
+			Y Y
+			Y Y
+			Y Y
+			Y Y
+			N N
+			N Y
+			N Y
+			Y N
+			N N
+			N Y
+			N N
+			Y Y
+			N Y
+			Y N
+			N Y
+			Y Y
+			N Y
+			N Y
+			N Y
+			Y N
+			N Y
+			N Y
+			N Y
+			Y N
+			Y Y
+			N Y
+			N N
+			N N
+			N Y
+			N Y
+			N N
+			Y Y
+			N Y
+			N Y
+			N Y
+			Y Y
+			Y N
+			Y N
+			Y Y
+			Y N
+			Y Y
+			N Y
+			N Y
+			N Y
+			Y N
+			N N
+			Y N
+			Y Y
+			Y N
+			N N
+			Y N
+			Y Y
+			N Y
+			Y Y
+			N Y
+			N Y
+			N N
+			Y Y
+			Y Y
+			N Y
+			N N
+			Y Y
+			N N
+			Y Y
+			Y Y
+			N N
+			N N
+			N Y
+			Y N
+			Y N
+			Y Y
+			Y Y
+			N N
+			N N
+			Y Y
+			N N
+			Y Y
+			N Y
+			N Y
+			Y Y
+			Y N
+			Y Y
+			N Y
+			N Y
+			N N
+			N Y
+			Y N
+			Y Y
+			Y N
+			Y Y
+			N N
+			N Y
+			N Y
+			N N
+			N Y
+			N N
+
+
+
+
+	Confusion Matrix
+	No	Yes
+No	131	9
+Yes	4	116
+
+
+			Confusion Matrix with weight likelihoods replaced
+			No	Yes
+			No	52	88
+			Yes	56	64
+
+bash-3.2$ quit
+bash: quit: command not found
+bash-3.2$ ei[Kxit
+exit
+
+Script done on Thu Feb 18 14:28:58 2016
